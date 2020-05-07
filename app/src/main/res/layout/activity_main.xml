@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back_ground" >
+
+    <TextView
+        android:id="@+id/watnaw_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/watnaw"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/sched"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sched"
+        android:layout_marginStart="50dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/check_schedule" />
+    <TextView
+        android:id="@+id/sched_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_schedule"
+        android:textStyle="bold"
+        android:layout_below="@+id/sched"
+        android:layout_marginStart="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/todo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/todo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo_list" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_list"
+        android:textStyle="bold"
+        android:layout_below="@+id/todo"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/calendar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/check_calendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_calendar"
+        android:textStyle="bold"
+        android:layout_below="@+id/calendar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"/>
+
+
+
+</RelativeLayout>
